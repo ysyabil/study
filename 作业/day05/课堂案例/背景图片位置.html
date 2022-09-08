@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 400px;
+        height: 350px;
+        border: 3px solid #000;
+        background-image: url(images/laoli.jpg);
+        background-repeat: no-repeat;
+        /* background-position: center; */
+        /* background-position: 50px 30px; */
+        /* background-position: 50% 50%; */
+        background-position: 100px;
+        background-color: pink;
+      }
+      /* 
+        背景图片的显示范围依赖于盒子大小
+        background-position： x水平   y垂直
+                 单词设置 left top
+                        x水平 ：left左  right 右 center水平居中
+                        y垂直   top上  bottom下  center水平居中
+
+                 px  0px 0px
+                    x水平  正右负左
+                    y垂直  正下负上
+
+                 %   0% 0%
+                    （盒子大小- 图片带下）剩余空间的百分比
+
+    注意：如果设置水平方向，垂直方向默认是center，垂直居中
+      */
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

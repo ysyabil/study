@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 40px;
+        height: 40px;
+        border: 5px solid #000;
+        background: url(images/163_f2e_www_index20170701_images_sprite_img20211126.png)
+          no-repeat -160px 0px;
+      }
+      div:hover {
+        background: url(images/163_f2e_www_index20170701_images_sprite_img20211126.png)
+          no-repeat -210px 0px;
+      }
+
+      /* 
+            精灵图、雪碧图、CSS Sprites 
+        把网页的小图片整合一张大的背景图片，通过背景插入的方式配合background-position显示大图的部分图片
+
+        优点：
+            1、可以减少对服务器的请求次数，减少带宽，提升浏览器的加载速度
+            2、减少图片的存储体积
+
+      */
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

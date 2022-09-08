@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      div {
+        color: yellow;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>样式表的权重</h1>
+    <hr />
+    <div>我到底是什么颜色？</div>
+    <!-- <div style="color: red">我到底是什么颜色？</div> -->
+
+    <!-- 
+        行内样式表的权重最高
+        内部样式表和外部样式表，权重相同，
+        因为浏览器的加载属性是从上往下执行，谁在后面谁的高
+
+
+        权重：
+            同一个元素设置相同属性，不同值，谁的权重高设置谁；
+
+        层叠：同一个元素设置不同的属性，所有的css样式会同时设置
+        
+    -->
+  </body>
+</html>

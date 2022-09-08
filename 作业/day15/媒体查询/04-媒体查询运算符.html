@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #888;
+      }
+      h1 {
+        text-align: center;
+        color: #fff;
+      }
+      /* 视口在400-600之间,and两边需要设置空格  */
+      /* @media (min-width: 400px) and (max-width: 600px) {
+        body {
+          background: orange;
+        }
+      } */
+      /* 视口小于500或者大于1000 生效 */
+      /* @media (max-width: 500px), (min-width: 1000px) {
+        body {
+          background: greenyellow;
+        }
+      } */
+
+      /* not 不是打印设置，其他设置都生效 */
+      /* @media not print {
+        body {
+          background: red;
+        }
+      } */
+
+      /* only+媒体类型，指定显示设置生效 */
+      /* @media only screen {
+        body {
+          background: red;
+        }
+      } */
+
+      /* 指定显示设置大于1000px生效 */
+      @media all and (min-width: 1000px) {
+        body {
+          background: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>媒体查询运算符</h1>
+    <!-- 
+        and  并且
+        ，   或者
+        not  否定，一定要配合媒体类型一起设置，媒体类型默认all，not后永远返回假
+        only+媒体类型
+     -->
+  </body>
+</html>

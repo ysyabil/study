@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3555466 */
+  src: url('iconfont.woff2?t=1659077399998') format('woff2'),
+       url('iconfont.woff?t=1659077399998') format('woff'),
+       url('iconfont.ttf?t=1659077399998') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ambitus05:before {
+  content: "\e600";
+}
+
+.icon-ambitus06:before {
+  content: "\e601";
+}
+
+.icon-format02:before {
+  content: "\e602";
+}
+
+.icon-format03:before {
+  content: "\e603";
+}
+
+.icon-industry01:before {
+  content: "\e604";
+}
+
+.icon-format10:before {
+  content: "\e605";
+}
+
+.icon-industry09:before {
+  content: "\e606";
+}
+
+.icon-industry04:before {
+  content: "\e607";
+}
+
+.icon-product08:before {
+  content: "\e608";
+}
+
+.icon-industry05:before {
+  content: "\e609";
+}
+
+.icon-kafei:before {
+  content: "\e657";
+}
+
+.icon-shutiao:before {
+  content: "\e658";
+}
+
+.icon-zhenzhunaicha:before {
+  content: "\e659";
+}
+
+.icon-tiantong:before {
+  content: "\e65d";
+}
+
+.icon-baomihua:before {
+  content: "\e660";
+}
+
+.icon-makalong:before {
+  content: "\e662";
+}
+
+.icon-paomian:before {
+  content: "\e689";
+}
+
+.icon-shousi:before {
+  content: "\e691";
+}
+
+.icon-zhouzi:before {
+  content: "\e697";
+}
+

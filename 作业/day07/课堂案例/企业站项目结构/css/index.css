@@ -1,0 +1,72 @@
+*{margin: 0;padding: 0;}
+/* 网页的头部 */
+.w{
+    width: 964px;
+    margin: 0 auto;
+}
+.header{
+   
+    height: 101px;
+    background: #ccc;
+    /* margin: 0 auto; */
+    /* float: left; */
+    /* 浮动后盒子不占位，margin居中会失效 */
+}
+.logo{
+    width: 282px;
+    height: 33px;
+    background: pink;
+    float: left;
+    margin-top: 34px;
+}
+.search{
+    width: 226px;
+    height: 28px;
+    background: yellow;
+    float: right;
+    margin-top: 39px;
+}
+/* 网页的导航 */
+.nav-wrap{
+    background-color: #313131; 
+}
+.nav{
+    height: 58px;
+    background-color: pink; 
+    list-style: none;
+}
+.nav li{
+    width: 119px;
+    height: 58px;
+    border-right: 1px solid green;
+    float: left;
+}
+/*  banner广告图 */
+.banner{
+    width: 1346px;
+    height: 464px;
+    background: #686866;
+    margin: 0 auto;
+}
+
+/* 公司新闻 */
+.news{
+  height: 268px;
+  background: yellowgreen;
+}
+.news div{
+    height: 240px;
+    float: left;
+}
+.news-left{
+    width: 480px;
+    background: yellow;
+}
+.news-center{
+    width: 240px;
+    background: #f1f1f1;
+}
+.news-right{
+    width: 241px;
+    background: #fbfbfb;
+}

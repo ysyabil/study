@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        width: 800px;
+        height: 500px;
+        border: 3px solid #000;
+        margin: 100px auto;
+        list-style: none;
+        font-size: 30px;
+      }
+      li {
+        width: 250px;
+        height: 100px;
+        background: orange;
+        border: 2px solid #000;
+        box-sizing: border-box;
+      }
+      ul:nth-of-type(1) {
+        display: flex;
+      }
+      ul:nth-of-type(1) li:nth-child(1) {
+        order: 1;
+        flex: 1;
+        /* flex: 1 1 0%; */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        主轴x：  宽度
+        主轴y：  高度
+        
+       子元素重新分配大小（需要超出设置）
+       flex：0拉伸   1收缩   basis（大小auto）
+
+
+       flex:1  // 1 1 0%
+       flex:auto//  1 1 auto
+
+
+     -->
+    <h2>主轴是x轴</h2>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <!-- <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li> -->
+    </ul>
+    <h2>主轴是Y轴</h2>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <!-- <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li> -->
+    </ul>
+  </body>
+</html>

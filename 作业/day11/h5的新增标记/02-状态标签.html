@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      meter,
+      progress {
+        width: 300px;
+        height: 50px;
+        vertical-align: middle;
+        margin: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    电量:
+    <meter min="0" max="100" value="25" low="10" high="20" optimum="30"></meter>
+    <br />
+
+    加载:
+    <progress max="100" value="60"></progress>
+
+    <!-- - 问题：meter 和 progress 什么区别？（重要）
+- 答案：meter 表示静态的度量，progress表示动态的进度。 -->
+  </body>
+</html>

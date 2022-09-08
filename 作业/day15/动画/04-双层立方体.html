@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        width: 600px;
+        height: 600px;
+        /* border: 2px solid red; */
+        /* background: rgba(245, 80, 80, 0.5); */
+
+        margin: 300px auto;
+        font-size: 80px;
+        transform-style: preserve-3d;
+      }
+      .max-box {
+        width: 600px;
+        height: 600px;
+        position: absolute;
+        transform-style: preserve-3d;
+        /* transform: rotateX(15deg) rotateY(35deg); */
+        animation: rotate1 4s linear infinite;
+      }
+      .min-box {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        transform-style: preserve-3d;
+        /* transform: rotateX(15deg) rotateY(35deg); */
+        margin: 200px;
+        animation: rotate2 4s 1s linear infinite;
+      }
+      .max-box p {
+        box-sizing: border-box;
+        position: absolute;
+        width: 600px;
+        height: 600px;
+        border: 5px solid #333;
+        background: rgb(0, 0, 0, 0.3);
+        text-align: center;
+        line-height: 600px;
+        transition: 1s;
+        border-radius: 50%;
+      }
+      .min-box p {
+        box-sizing: border-box;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border: 5px solid blue;
+        background: rgba(9, 136, 240, 0.3);
+        text-align: center;
+        line-height: 200px;
+        border-radius: 50%;
+      }
+      .min-box p:nth-child(1) {
+        transform: translateZ(100px);
+      }
+      .min-box p:nth-child(2) {
+        transform: translateZ(-100px);
+      }
+      .min-box p:nth-child(3) {
+        transform: rotateX(90deg) translateZ(100px);
+      }
+      .min-box p:nth-child(4) {
+        transform: rotateX(-90deg) translateZ(100px);
+      }
+      .min-box p:nth-child(5) {
+        transform: rotateY(90deg) translateZ(100px);
+      }
+      .min-box p:nth-child(6) {
+        transform: rotateY(-90deg) translateZ(100px);
+      }
+      .max-box p:nth-child(1) {
+        transform: translateZ(300px);
+      }
+      .max-box p:nth-child(2) {
+        transform: translateZ(-300px);
+      }
+      .max-box p:nth-child(3) {
+        transform: rotateX(90deg) translateZ(300px);
+      }
+      .max-box p:nth-child(4) {
+        transform: rotateX(-90deg) translateZ(300px);
+      }
+      .max-box p:nth-child(5) {
+        transform: rotateY(90deg) translateZ(300px);
+      }
+      .max-box p:nth-child(6) {
+        transform: rotateY(-90deg) translateZ(300px);
+      }
+
+      .max-box:hover p:nth-child(1) {
+        transform: translateZ(450px);
+      }
+      .max-box:hover p:nth-child(2) {
+        transform: translateZ(-450px);
+      }
+      .max-box:hover p:nth-child(3) {
+        transform: rotateX(90deg) translateZ(450px);
+      }
+      .max-box:hover p:nth-child(4) {
+        transform: rotateX(-90deg) translateZ(450px);
+      }
+      .max-box:hover p:nth-child(5) {
+        transform: rotateY(90deg) translateZ(450px);
+      }
+      .max-box:hover p:nth-child(6) {
+        transform: rotateY(-90deg) translateZ(450px);
+      }
+
+      @keyframes rotate1 {
+        0% {
+          transform: rotateX(0deg) rotateY(0deg);
+        }
+        100% {
+          transform: rotateX(360deg) rotateY(360deg);
+        }
+      }
+      @keyframes rotate2 {
+        0% {
+          transform: rotateX(0deg) rotateY(0deg);
+        }
+        100% {
+          transform: rotateX(-360deg) rotateY(-360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="max-box">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+      </div>
+      <div class="min-box">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+      </div>
+    </div>
+  </body>
+</html>

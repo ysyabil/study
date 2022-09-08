@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 父子选择器 */
+        p>strong{color: red;}
+        /* 后代选择器 */
+        p em{color:blue}
+        /* 群组选择器 */
+        div,p{background: green;}
+        /* 相邻兄弟选择器 */
+        p+h3{color: aquamarine;}
+        /* 通用兄弟选择器 */
+        p~h3{color:pink;}
+        /* 伪类选择器
+           hover：鼠标悬浮效果
+           active：鼠标点击效果
+        */
+        h3:hover{color: red;}
+        h3:active{color: yellow;}
+
+    </style>
+</head>
+<body>
+    <div>零基础开始学 Web 前端开发</div>
+    <p>
+        <strong>>2017年4月18日</strong>
+    </p>
+    <p>
+        Web前端技术论坛所有讨论帖
+        <em>Web前端技术版面讨论</em>
+    </p>
+    <h3>JavaScript编程</h3>
+    <h3>AJAX开发</h3>
+    <h3>UI界面设计</h3>
+    CSS 分类: JavaScript AJAX EXT JQuery prototype CSS 界面设计
+</body>
+</html>

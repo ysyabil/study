@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      div {
+        margin: 200px auto;
+        width: 400px;
+        height: 300px;
+        background: rgba(0, 0, 0, 0.3);
+        transform: rotateX(15deg) rotateY(15deg);
+        transform-style: preserve-3d;
+        /* 创建3d空间 */
+      }
+      p {
+        width: 150px;
+        height: 100px;
+        background: orange;
+        transition: 1s;
+      }
+      div:hover p {
+        transform: scaleZ(1) rotateX(30deg);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        1、设置3d属性：父元素需要创建3d空间
+          transform-style:preserve-3d
+          
+        3d的缩放
+            transform:
+                        scaleZ() 盒子的厚度，因为显示屏2d，接合旋转一起看
+                        scale3d（x,y,z）
+              
+     -->
+    <div>
+      <p>abc</p>
+    </div>
+  </body>
+</html>

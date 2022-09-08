@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        width: 500px;
+        padding: 10px;
+        border: 6px solid #000;
+      }
+      /* p::first-letter {
+        font-size: 30px;
+        color: red;
+      } */
+      p::first-line {
+        font-size: 30px;
+        color: red;
+      }
+      p::selection {
+        background-color: pink;
+        color: rgba(137, 43, 226, 0.349);
+        /* 只能设置背景颜色和字体颜色 */
+      }
+      p {
+        user-select: none;
+        /* 禁止文本复制 */
+      }
+      p::after {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 100px;
+        background: red;
+      }
+      p:hover::after {
+        background: yellow;
+      }
+      input::placeholder {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" placeholder="密码" />
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi facere
+      corrupti non? Reprehenderit, debitis aut exercitationem officiis amet
+      accusantium et officia, eos illo beatae ullam, atque voluptatum sint
+      accusamus veritatis!
+    </p>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      .box {
+        width: 400px;
+        height: 300px;
+        border: 5px solid #000;
+        position: relative;
+      }
+      p {
+        width: 200px;
+        height: 100px;
+        background: orange;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: calc(-200px / 2);
+        margin-top: -50px;
+      }
+    </style>
+    <!-- 
+        可以动态数值运算！
+          +  -  *乘法  /除法 
+     -->
+  </head>
+  <body>
+    <div class="box">
+      <p></p>
+    </div>
+
+    <!-- 定位居中
+    第一种
+        父元素：相对定位
+        子元素：绝对定位
+                left：0
+                right：0
+                top：0
+                bottom:0
+        margin:auto;
+
+   第二种
+       父元素：相对定位
+       子元素：绝对定位 
+                left：50%(移动参照物宽度的一半)
+                top:50%(移动参照物宽度的一半)
+              margin-left:-(自身的宽度的一半)
+              margin-top:-(自身的高度的一半)
+    
+    -->
+  </body>
+</html>

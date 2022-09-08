@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      .content {
+        margin: 100px auto;
+        width: 200px;
+        height: 200px;
+        border: 5px solid #000;
+        position: relative;
+        transform-style: preserve-3d;
+        /* 3d空间 */
+        transition: 1s;
+      }
+      p {
+        width: 200px;
+        height: 200px;
+        font-size: 50px;
+        text-align: center;
+        line-height: 200px;
+        position: absolute;
+      }
+      p:nth-child(1) {
+        background: pink;
+      }
+      p:nth-child(2) {
+        background: orange;
+        transform: rotateY(180deg);
+        /* 把反面旋转到后面 */
+        backface-visibility: hidden;
+        /* 设置背景的内容隐藏 */
+      }
+      .content:hover {
+        transform: rotateY(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <p>正面</p>
+      <p>反面</p>
+    </div>
+  </body>
+</html>

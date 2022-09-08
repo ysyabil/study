@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .body {
+        width: 1000px;
+        height: 1000px;
+      }
+      /* 向上渐变 */
+      .div1 {
+        float: left;
+        margin-left: 20px;
+        width: 300px;
+        height: 300px;
+        background-image: linear-gradient(to top, red 30%, green 60%);
+      }
+      /* 向下渐变 */
+      .div2 {
+        float: left;
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 300px;
+        height: 300px;
+        background-image: linear-gradient(to bottom, red 50%, green 90%);
+      }
+      /* 对角渐变 */
+      .div3 {
+        float: left;
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 300px;
+        height: 300px;
+        background-image: linear-gradient(to left bottom, red 30%, green 80%);
+      }
+      /* color1大于color2的值，没有渐变 */
+      .div4 {
+        float: left;
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 300px;
+        height: 300px;
+        background-image: linear-gradient(red 40%, green 20%);
+      }
+      /* 多条交叉重叠 */
+      .div5 {
+        float: left;
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 300px;
+        height: 300px;
+        background-image: linear-gradient(to bottom, red 20%, transparent 10%),
+          linear-gradient(to right, green 20%, transparent 10%);
+        background-size: 30px 30px;
+      }
+      /* 一个北京多个颜色设置 */
+      .div6 {
+        float: left;
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 300px;
+        height: 300px;
+        background-image: linear-gradient(
+          red 0%,
+          red 20%,
+          blue 0%,
+          blue 40%,
+          pink 0%,
+          pink 70%,
+          yellow 0%,
+          yellow 80%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body">
+      <div class="div1"></div>
+      <div class="div2"></div>
+      <div class="div3"></div>
+      <div class="div4"></div>
+      <div class="div5"></div>
+      <div class="div6"></div>
+    </div>
+  </body>
+</html>

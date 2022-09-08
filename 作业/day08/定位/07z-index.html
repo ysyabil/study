@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      .box {
+        width: 250px;
+        height: 250px;
+        border: 4px solid #000;
+        margin: 50px auto;
+        font-size: 30px;
+        position: relative;
+      }
+      .box1 span {
+        width: 100px;
+        height: 100px;
+        display: block;
+      }
+      .item1 {
+        background: red;
+      }
+      .item2 {
+        background: yellow;
+        position: absolute;
+        left: 50px;
+        top: 50px;
+        z-index: -1;
+      }
+      .item3 {
+        background: yellowgreen;
+        position: absolute;
+        left: 100px;
+        top: 100px;
+      }
+      .item4 {
+        background: pink;
+        position: absolute;
+        left: 150px;
+        top: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>定位层叠属性</h2>
+    <hr />
+    <!-- 
+        默认层叠（整数）
+        z-index：值越大，层级越高，整数，可以设置负值
+        元素默认层级
+
+         最后设置定位0.2  >  定位元素的层级 0.1 > 普通元素 0
+
+     -->
+    <div class="box box1">
+      <span class="item1">1</span>
+      <span class="item2">2</span>
+      <span class="item3">3</span>
+      <span class="item4">4</span>
+    </div>
+  </body>
+</html>

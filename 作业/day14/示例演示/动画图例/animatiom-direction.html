@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+	<head>
+		<meta charset="utf-8" />
+		<title>animation-fill-mode</title>
+		<style>
+			h1{
+				font-size:16px;
+			}
+			li{
+				padding:10px;
+			}
+			span {
+				display: block;
+				margin-left: 30px;
+				width: 80px;
+				height: 80px;
+				padding: 10px;
+				border-radius: 50px;
+				box-shadow: 0 0 10px rgba(204, 102, 0, .8);
+				/*background: #ccc;*/
+			}
+
+
+			.normal span {
+				animation:animations 2s 1s 4 normal;
+			}
+			.reverse span {
+				animation:animations 2s 1s 4 reverse;
+			}
+			.alternate span {
+				animation:animations 2s 1s 4 alternate;
+			}
+			.alternate-reverse span {
+				animation:animations 2s 1s 4 alternate-reverse;
+			}
+
+
+
+			@keyframes animations{
+				from{margin-left:0;background:linear-gradient(top,#fff,#F6D66E);}
+				to{margin-left:400px;background:linear-gradient(to bottom,#fff,yellowgreen);}
+			}
+		</style>
+	</head>
+	<body>
+		<h1>animation-directoin：</h1>
+		<ul>
+			<li class="normal">
+				<strong>normal: </strong>
+				<span></span>
+			</li>
+			<li class="reverse">
+				<strong>reverse: </strong>
+				<span></span>
+			</li>
+			<li class="alternate">
+				<strong>alternate: </strong>
+				<span></span>
+			</li>
+			<li class="alternate-reverse">
+				<strong>alternate-reverse: </strong>
+				<span></span>
+			</li>
+		</ul>
+	</body>
+</html>

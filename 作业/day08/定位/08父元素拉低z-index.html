@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      .wrap1,
+      .wrap2 {
+        width: 200px;
+        height: 200px;
+        border: 5px solid #000;
+        font-size: 30px;
+        position: relative;
+      }
+      .wrap1 {
+        background: yellow;
+        z-index: 2;
+      }
+      .wrap2 {
+        background: orange;
+        z-index: 1;
+        top: -60px;
+      }
+      .child {
+        width: 80px;
+        height: 80px;
+        background: red;
+        position: relative;
+        z-index: 5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap1">1</div>
+    <div class="wrap2">
+      2
+      <p class="child">3</p>
+    </div>
+  </body>
+</html>

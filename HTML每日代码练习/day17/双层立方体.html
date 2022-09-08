@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .body {
+        transform-style: preserve-3d;
+        display: flex;
+        margin: 100px auto;
+        width: 600px;
+        height: 600px;
+        animation: move 9s linear infinite;
+      }
+      @keyframes move {
+        0% {
+          transform: rotateX(0deg) rotateY(0deg);
+        }
+        100% {
+          transform: rotateX(360deg) rotateY(360deg);
+        }
+      }
+      .max-box {
+        position: absolute;
+        transform-style: preserve-3d;
+        /* transform: rotateX(15deg) rotateY(15deg); */
+      }
+      .min-box {
+        margin: auto;
+        position: absolute;
+        margin: 200px;
+        transform-style: preserve-3d;
+        transform: rotateX(15deg) rotateY(15deg);
+        animation: rotate 9s linear infinite;
+      }
+      @keyframes rotate {
+        0% {
+          transform: rotateX(0deg) rotateY(0deg);
+        }
+        100% {
+          transform: rotateX(-360deg) rotateY(-360deg);
+        }
+      }
+      .max-box p {
+        position: absolute;
+        width: 600px;
+        height: 600px;
+        background-color: rgba(56, 47, 47, 0.5);
+        border: 1px solid #000;
+        font-size: 40px;
+        text-align: center;
+        line-height: 600px;
+      }
+      .min-box p {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background-color: rgba(66, 66, 220, 0.5);
+        border: 1px solid blue;
+        font-size: 30px;
+        text-align: center;
+        line-height: 200px;
+      }
+      .max-box p:nth-child(1) {
+        transform: translateZ(300px);
+      }
+      .max-box p:nth-child(2) {
+        transform: translateZ(-300px);
+      }
+      .max-box p:nth-child(3) {
+        transform: rotateX(90deg) translateZ(300px);
+      }
+      .max-box p:nth-child(4) {
+        transform: rotateX(-90deg) translateZ(300px);
+      }
+      .max-box p:nth-child(5) {
+        transform: rotateY(90deg) translateZ(300px);
+      }
+      .max-box p:nth-child(6) {
+        transform: rotateY(-90deg) translateZ(300px);
+      }
+      .max-box:hover p:nth-child(1) {
+        transform: translateZ(400px);
+      }
+      .max-box:hover p:nth-child(2) {
+        transform: translateZ(-400px);
+      }
+      .max-box:hover p:nth-child(3) {
+        transform: rotateX(90deg) translateZ(400px);
+      }
+      .max-box:hover p:nth-child(4) {
+        transform: rotateX(-90deg) translateZ(400px);
+      }
+      .max-box:hover p:nth-child(5) {
+        transform: rotateY(90deg) translateZ(400px);
+      }
+      .max-box:hover p:nth-child(6) {
+        transform: rotateY(-90deg) translateZ(400px);
+      }
+      .min-box p:nth-child(1) {
+        transform: translateZ(100px);
+      }
+      .min-box p:nth-child(2) {
+        transform: translateZ(-100px);
+      }
+      .min-box p:nth-child(3) {
+        transform: rotateX(90deg) translateZ(100px);
+      }
+      .min-box p:nth-child(4) {
+        transform: rotateX(-90deg) translateZ(100px);
+      }
+      .min-box p:nth-child(5) {
+        transform: rotateY(90deg) translateZ(100px);
+      }
+      .min-box p:nth-child(6) {
+        transform: rotateY(-90deg) translateZ(100px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body">
+      <div class="max-box">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+      </div>
+      <div class="min-box">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+      </div>
+    </div>
+  </body>
+</html>

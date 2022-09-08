@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        border: 4px solid #000;
+        margin: 50px;
+        box-sizing: border-box;
+      }
+      .child1 {
+        /* border-radius: 50px; */
+        border-radius: 50%;
+      }
+      .child2 {
+        width: 200px;
+        border-radius: 50%;
+      }
+      .child3 {
+        /* border-radius: 20px 50px; */
+        /* 对角 */
+        /* border-radius: 10px 20px 50px; */
+        /*  左上  右边对角   右下 */
+        /* border-radius: 10px 20px 50px 80px; */
+        /* 顺时针 */
+
+        width: 200px;
+        border-radius: 0px 0px 100px 100px;
+      }
+      .child4 {
+        border-top-left-radius: 100px;
+      }
+      .child5 {
+        height: 50px;
+        border-radius: 25px;
+      }
+      .child6 {
+        border-radius: 25px/80px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>圆角边框</h2>
+    <h3>正圆</h3>
+    <div class="child1"></div>
+    <h3>椭圆</h3>
+    <div class="child2"></div>
+    <h3>半圆</h3>
+    <div class="child3"></div>
+    <h3>扇形</h3>
+    <div class="child4"></div>
+    <h3>按钮</h3>
+    <div class="child5"></div>
+    <h3>水平半径和垂直半径设置</h3>
+    <div class="child6"></div>
+  </body>
+</html>

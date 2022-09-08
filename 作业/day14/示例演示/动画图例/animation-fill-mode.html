@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+	<head>
+		<meta charset="utf-8" />
+		<title>animation-fill-mode</title>
+		<style>
+			h1{
+				font-size:16px;
+			}
+			li{
+				padding:10px;
+			}
+			span {
+				display: block;
+				margin-left: 30px;
+				width: 80px;
+				height: 80px;
+				padding: 10px;
+				border-radius: 50px;
+				box-shadow: 0 0 10px rgba(204, 102, 0, .8);
+			}
+
+
+			.none span{
+				-moz-animation:animations 1s ease 3s;
+				-webkit-animation:animations 1s ease 3s;
+				animation:animations 1s ease 3s;
+			}
+			.forwards span{
+				-moz-animation:animations 1s ease 3s forwards;
+				-webkit-animation:animations 1s ease 3s forwards;
+				animation:animations 1s ease 3s forwards;
+			}
+			.backwards span{
+				-moz-animation:animations 1s ease 3s backwards;
+				-webkit-animation:animations 1s ease 3s backwards;
+				animation:animations 1s ease 3s backwards;
+			}
+			.both span{
+				-moz-animation:animations 1s ease 3s both;
+				-webkit-animation:animations 1s ease 3s both;
+				animation:animations 1s ease 3s both;
+			}
+
+
+
+			@keyframes animations{
+				from{margin-left:0;background:darkred;}
+				to{margin-left:400px;background:darkolivegreen;}
+			}
+		</style>
+	</head>
+	<body>
+		<h1>animation-fill-mode：</h1>
+		<ul>
+			<li class="none">
+				<strong>none: </strong>
+				<span></span>
+			</li>
+			<li class="forwards">
+				<strong>forwards: </strong>
+				<span></span>
+			</li>
+			<li class="backwards">
+				<strong>backwards: </strong>
+				<span></span>
+			</li>
+			<li class="both">
+				<strong>both: </strong>
+				<span></span>
+			</li>
+		</ul>
+	</body>
+</html>

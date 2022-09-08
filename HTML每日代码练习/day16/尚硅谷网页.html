@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* body,
+      html {
+        height: 100%;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+      } */
+      div:nth-child(1) {
+        width: auto;
+        height: 70px;
+        background-color: #444545;
+      }
+      div:nth-child(1) img {
+        width: 130px;
+        height: 40px;
+        float: left;
+        margin-left: 17px;
+        margin-top: 20px;
+      }
+      div:nth-child(1) ul {
+        margin-top: 20px;
+        float: right;
+        margin-left: -20px;
+        list-style: none;
+      }
+      div:nth-child(1) li {
+        float: left;
+        margin-left: 6px;
+        width: 86px;
+        height: 36px;
+        border: 1px solid #fff;
+        border-radius: 10%;
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        line-height: 36px;
+      }
+      div:nth-child(2) {
+        width: auto;
+        height: calc(100vh - 70px);
+        background-image: url(./images/bg.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        /* flex: 1; */
+      }
+      div:nth-child(2) p {
+        width: 150px;
+        height: 210px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      /* div:nth-child(2) img {
+        margin-left: 30px;
+        margin-top: 38px;
+      } */
+      div:nth-child(2) span {
+        margin-top: 60px;
+      }
+      div:nth-child(2) p:nth-child(1) {
+        background-color: #595ca8;
+      }
+
+      div:nth-child(2) p:nth-child(2) {
+        background-color: #ff9d2e;
+      }
+
+      div:nth-child(2) p:nth-child(3) {
+        background-color: #01a6de;
+      }
+
+      div:nth-child(2) p:nth-child(4) {
+        background-color: #015e91;
+      }
+
+      div:nth-child(2) p:nth-child(5) {
+        background-color: #1dc128;
+      }
+      div:nth-child(2) p:nth-child(6) {
+        background-color: #01a6de;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="./images/atguigu-logo.png" alt="" />
+      <ul>
+        <li>新学科</li>
+        <li>学科简介</li>
+        <li>上海校区</li>
+      </ul>
+    </div>
+    <div>
+      <p>
+        <img src="./images/ywfw_1.png" alt="" />
+        <span>HTML5</span>
+      </p>
+      <p>
+        <img src="./images/ywfw_2.png" alt="" />
+        <span>HTML5</span>
+      </p>
+      <p>
+        <img src="./images/ywfw_3.png" alt="" />
+        <span>CSS3</span>
+      </p>
+      <p>
+        <img src="./images/ywfw_4.png" alt="" />
+        <span>JavaScript</span>
+      </p>
+      <p>
+        <img src="./images/ywfw_5.png" alt="" />
+        <span>HTML5</span>
+      </p>
+      <p>
+        <img src="./images/ywfw_6.png" alt="" />
+        <span>HTML5</span>
+      </p>
+    </div>
+  </body>
+</html>

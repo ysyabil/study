@@ -1,0 +1,22 @@
+/* 版心区域的公共样式 */
+.w{
+    width: 1200px;
+    margin: 0 auto;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clear-fix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.clear-fix{
+    *zoom: 1;
+}
+.border0{
+    border: 0 !important;
+}

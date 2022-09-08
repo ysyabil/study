@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 200px;
+        height: 100px;
+        background: red;
+
+        transition-property: height, width;
+        transition-duration: 1s, 3s;
+        transition-delay: 0s, 1s;
+      }
+      div:hover {
+        width: 400px;
+        height: 300px;
+        background: green;
+        transition: 0s;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+
+    <!-- 
+        transition执行条件
+                1：初始值 ，最终值
+                2：用户动作，事件触发
+
+        transition：1参与过渡的属性 2过渡执行的时间  3延迟时间  4速度动画；
+
+          1、参与过渡的属性：transition-property:all (所有)
+
+          2、过渡执行的时间：transition-duration：0px
+
+          3、过渡执延迟的时间：transition-delay：0px
+
+          4、过渡的速度动画：transition-timing-function
+                        ease  逐渐变慢
+                        linear  匀速
+                        ease-in  加速
+                        ease-out 减速
+                        ease-in-out  先加后减
+                        steps() 自己定义动多少步
+                        https://cubic-bezier.com/（贝塞尔曲线网址，自己设置速度）
+
+     -->
+  </body>
+</html>

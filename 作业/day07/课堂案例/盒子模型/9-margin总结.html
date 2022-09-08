@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        1、外边距margin，设置盒子与盒子之间的位置关系
+        2、边框线以外都可以设置外边距
+        3、外边距的设置
+            设置单一方向
+                margin-left
+                margin-right
+                margin-top
+                margin-bottom
+
+            设置多个方向
+                margin:
+                        1个值   4个方向
+                        2个值  上下   左右
+                        3个值  上     左右   下
+                        4个值  上  右  下  左
+      4、margin可以支持负值
+            水平  margin-left ： 正右负左
+            垂直  margin-top：   正下负上
+
+     5、盒子水平居中
+            margin:0  auto;
+
+     6、margin常见的bug
+            1、margin重叠
+                两个盒子之间垂直的margin会重叠，谁的值大设置设
+            2、margin-top的传递
+                父元素下的第一个子元素（垂直排列）设置margin-top，会错误传递给父元素
+
+                解决方法
+                        父元素：
+                                border-top
+                                padding-top
+                                overflow：hidden
+
+                        子元素
+                            display:inline-block
+
+
+思考题
+    div：
+        宽高 200
+        padding：  50
+        border：10px
+        margin:100px
+
+    问：盒子的总宽高是多少 320px？
+     -->
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        高度塌陷的解决方法-清除浮动
+        .a{
+            width: 500px;
+            border: 1px solid #000;
+            background: pink;
+           
+        }
+        .c,.d,.e,.f{
+            width: 100px;
+            height: 100px;
+            border: 1px solid rgb(242, 31, 31);
+            float: left;
+        }
+        .b{
+            width: 0px;
+            height: 1px;
+            clear: both;
+        } */
+        /* 给父元素加overflow:hidden
+        .a{
+            width: 500px;
+            border: 1px solid #000;
+            background: pink;
+            overflow: hidden;
+
+           
+        }
+        .c,.d,.e,.f{
+            width: 100px;
+            height: 100px;
+            border: 1px solid rgb(242, 31, 31);
+            float: left;
+        }
+         */
+         /* 万能清除法 */
+         .a{
+            width: 500px;
+            border: 1px solid #000;
+            background: pink;
+           
+        }
+        .c,.d,.e,.f{
+            width: 100px;
+            height: 100px;
+            border: 1px solid rgb(242, 31, 31);
+            float: left;
+        }
+       .a::after{
+        width: 0px;
+        height: 0px;
+        content:""; 
+        display: block; 
+        clear:both;
+      
+       }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div class="c">1</div>
+        <div class="d">2</div>
+        <div class="e">3</div>
+        <div class="f">4</div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 线性渐变重复 */
+      .div1 {
+        width: 600px;
+        height: 600px;
+        background: repeating-linear-gradient(red, yellow 20%, blue 40%);
+      }
+      /* 径向渐变重复 */
+      .div2 {
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        background: -webkit-repeating-radial-gradient(
+          circle,
+          red 10%,
+          yellow 20%,
+          blue 20%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+  </body>
+</html>

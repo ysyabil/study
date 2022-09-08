@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .body {
+        width: 200px;
+        height: 200px;
+      }
+      .f {
+        float: left;
+        width: 100px;
+        height: 100px;
+        border-radius: 10%;
+        background-color: #50abe4;
+      }
+      .f p {
+        color: #fff;
+        font-size: 40px;
+        margin-top: 25px;
+        margin-left: 60px;
+      }
+      .s {
+        float: left;
+        margin-left: -6px;
+        width: 0px;
+        height: 0px;
+        border: 50px solid;
+        border-color: transparent transparent transparent #50abe4;
+        border-right: hidden;
+      }
+      .left {
+        float: left;
+        width: 0px;
+        height: 0px;
+        border: 50px solid;
+        border-color: #50abe4 #50abe4 #50abe4 transparent;
+      }
+      .left p {
+        color: #fff;
+        font-size: 40px;
+        margin-top: -25px;
+        margin-left: 20px;
+      }
+      .right {
+        float: left;
+        width: 0px;
+        height: 0px;
+        border: 50px solid;
+        border-color: transparent transparent transparent #50abe4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body">
+      <div class="f">
+        <p>1</p>
+      </div>
+      <div class="s"></div>
+    </div>
+
+    <div class="body">
+      <div class="left">
+        <p>2</p>
+      </div>
+      <div class="right"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .top,
+      .bottom {
+        width: 100px;
+        height: 100px;
+        font-size: 40px;
+      }
+      .box1 .top {
+        background: red;
+        margin-bottom: 50px;
+      }
+      .box1 .bottom {
+        background: yellow;
+        margin-top: 50px;
+      }
+
+      .box2 div {
+        display: inline-block;
+      }
+      .box2 .top {
+        background: red;
+        margin-right: 50px;
+      }
+      .box2 .bottom {
+        background: yellow;
+        margin-left: 50px;
+      }
+      /* 
+        1、外边距是设置盒子与盒子之间的位置关系
+        2、边框线以外的距离都可以设置外边距
+        3、外边距的设置
+            单一方向设置
+                margin-left
+                margin-right
+                margin-top
+                margin-bottom
+
+            设置多个方向
+                margin:1个值   4个方向
+                margin:2个值   上下    左右
+                margin:3个值   上      左右     下
+                margin:4个值   顺时针  上、右、下、左
+
+        4、margin常见的bug
+            margin重叠问题
+                    两个盒子之间垂直方向的margin会重叠，谁的距离大设置谁
+                    解决方法：给一个盒子设置就行
+      
+      */
+    </style>
+  </head>
+  <body>
+    <h2>margin常见的bug</h2>
+
+    <h4>垂直方向的margin</h4>
+    <hr />
+    <div class="box1">
+      <div class="top">top</div>
+      <div class="bottom">bottom</div>
+    </div>
+    <h4>水平方向的margin</h4>
+    <hr />
+    <div class="box2">
+      <div class="top">top</div>
+      <div class="bottom">bottom</div>
+    </div>
+  </body>
+</html>

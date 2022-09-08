@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* list-style：none指取消列表默认 */
+        /* 如果在通配符有设置css样式，且只给父元素设置css但是子元素没有设置css且文本内容都在子元素中，那么此时子元素也不会继承父元素的css设置，只会跟通配符的css设置 */
+        *{list-style: none;
+          color: yellow;}
+        /* 只设置ul这个父元素的时候，子元素会继承父元素的css设置 */
+        ul{color: blue;}
+        /* 如果本身子元素有自己的css设置，则不会继承父元素的css设置 */
+        li{color: aqua;}
+    </style>
+</head>
+<body>
+    <ul>
+        <li>桌子</li>
+        <li>椅子</li>
+        <li>地板</li>
+    </ul>
+    
+</body>
+</html>

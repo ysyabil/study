@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* img[title] {
+        width: 100px;
+      } */
+      /* img[title="小花猪"] {
+        width: 100px;
+      } */
+      /* img[title~="小花猪"] {
+        width: 100px;
+      } */
+      /* img[title^="小猪"] {
+        width: 100px;
+      } */
+      /* img[title$="天蓬元帅"] {
+        width: 100px;
+      } */
+      /* img[title*="小猪"] {
+        width: 100px;
+      } */
+      img[class|="box"] {
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="../images/pic2.jpg" alt="" title="小猪 天蓬元帅" />
+    <img
+      src="../images/pic2.jpg"
+      alt=""
+      title="小花猪 小猪天蓬元帅"
+      class="box"
+    />
+    <img src="../images/pic2.jpg" alt="" class="box-right" />
+
+    <!-- 
+
+        e[attr]         有属性就选中
+        e[attr="val"]    有属性等于某个值才选中
+        e[attr~="val"]   有属性等于多个值其中的一个值，也能选中
+        e[attr^="val"]   有属性值开头等于某个值，也能选中
+        e[attr$="val"]   有属性值结尾等于某个，也能选中
+        e[attr*="val"]   有属性值包含某个，也能选中
+        e[attr|="val"]   有属性值以val开头，或者val后面-链接也能选中
+
+
+     -->
+  </body>
+</html>

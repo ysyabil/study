@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* 解决高度塌陷 */
+      div {
+        width: 600px;
+        border: 1px solid #000;
+      }
+      div:nth-child(1) {
+        overflow: hidden;
+      }
+      div:nth-child(1) p {
+        float: left;
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+      }
+      /* 解决margin重叠 */
+      div:nth-child(2) {
+        overflow: hidden;
+      }
+      div:nth-child(2) p:nth-child(1) {
+        margin-top: 30px;
+      }
+      div:nth-child(2) p:nth-child(2) {
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p></p>
+    </div>
+    <div>
+      <p></p>
+      <p></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 300px;
+        height: 300px;
+        border: 2px solid #000;
+      }
+      div::after {
+        content: "";
+        width: 100px;
+        height: 60px;
+        background-color: red;
+        display: block;
+      }
+      div::before {
+        content: "ABC";
+        width: 100px;
+        height: 60px;
+        background-color: yellow;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        ::after 和::before 需要配合content属性一起使用
+            ::after 是在父元素内容后面模拟空盒子
+            ::before 是在父元素内容的前面模拟空盒子
+
+     -->
+
+    <div>
+      <span> 写字楼里写字间1</span>
+    </div>
+  </body>
+</html>

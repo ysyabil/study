@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        margin: 50px;
+        width: 200px;
+        height: 100px;
+        background: linear-gradient(red 50%, transparent 50%),
+          linear-gradient(to right, green 50%, transparent 50%);
+        /* 叠加颜色用逗号隔开 */
+        /* background-size: 20px 20px; */
+        background: linear-gradient(
+          red 0%,
+          red 20%,
+          blue 0%,
+          blue 40%,
+          pink 0%,
+          pink 70%,
+          yellow 0%,
+          yellow 90%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <article></article>
+
+    <!-- 
+      background: linear-gradient(red 20%, green 60%);
+      解析： 
+         红色实色 20%
+         渐变色： 60% -20%=40%
+         绿色的实色  100% -60%=40%
+
+    background: linear-gradient(red 40%, green 30%);
+        红色实色 40%
+        没有渐变色： 
+         绿色的实色  100% - 40 = 60%
+    
+    background: linear-gradient(
+         red 0%,   red 20%，
+         blue 0% , blue 40% ,
+         pink 0% , pink 70% )
+     -->
+  </body>
+</html>

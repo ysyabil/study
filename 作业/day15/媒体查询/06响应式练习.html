@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      .container {
+        margin: 0px auto;
+        width: 100%;
+        background: pink;
+        height: 500px;
+        font-size: 50px;
+        text-align: center;
+        color: #fff;
+      }
+      p {
+        display: none;
+      }
+
+      @media (min-width: 768px) and (max-width: 992px) {
+        .container {
+          width: 750px;
+          background: yellow;
+        }
+        p:nth-child(1) {
+          display: block;
+        }
+      }
+      @media (min-width: 993px) and (max-width: 1200px) {
+        .container {
+          width: 970px;
+          background: orange;
+        }
+        p:nth-child(2) {
+          display: block;
+        }
+      }
+
+      @media (min-width: 1201px) {
+        .container {
+          width: 1170px;
+          background: green;
+        }
+        p:nth-child(3) {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>我喜欢你！</p>
+      <p>你听错了！</p>
+      <p>你自己想想吧！</p>
+    </div>
+    <!-- 
+2、阈值设置  768px   992px  1200px
+
+    0-768px   超小屏幕  90%
+    768- 992px 小屏幕   50%
+    992-1200px 中等屏幕 33.33%
+    1200以上   大屏幕   25%
+
+    超小屏幕  container 宽 100%
+            500px
+    小屏幕： 750px
+    中等屏幕： 970px;
+    大屏幕： 1170px 
+  
+     -->
+  </body>
+</html>

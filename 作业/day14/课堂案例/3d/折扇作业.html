@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        margin: 100px auto;
+        width: 600px;
+        height: 230px;
+        border-bottom: 2px solid #000;
+        list-style: none;
+      }
+      li {
+        width: 60px;
+        height: 200px;
+        box-shadow: 2px 2px 5px #888;
+        position: absolute;
+        transform-origin: center bottom;
+        left: 45%;
+        transition: 1s;
+      }
+      li:nth-child(1) {
+        background: red;
+      }
+      ul:hover li:nth-child(2) {
+        background: orange;
+        transform: rotate(15deg);
+      }
+      ul:hover li:nth-child(3) {
+        background: yellow;
+        transform: rotate(30deg);
+      }
+      ul:hover li:nth-child(4) {
+        background: green;
+        transform: rotate(45deg);
+      }
+      ul:hover li:nth-child(5) {
+        background: yellowgreen;
+        transform: rotate(60deg);
+      }
+      ul:hover li:nth-child(6) {
+        background: blue;
+        transform: rotate(75deg);
+      }
+      ul:hover li:nth-child(7) {
+        background: rgb(221, 129, 240);
+        transform: rotate(90deg);
+      }
+      ul:hover li:nth-last-child(1) {
+        background: orange;
+        transform: rotate(-15deg);
+      }
+      ul:hover li:nth-last-child(2) {
+        background: yellow;
+        transform: rotate(-30deg);
+      }
+      ul:hover li:nth-last-child(3) {
+        background: green;
+        transform: rotate(-45deg);
+      }
+      ul:hover li:nth-last-child(4) {
+        background: yellowgreen;
+        transform: rotate(-60deg);
+      }
+      ul:hover li:nth-last-child(5) {
+        background: blue;
+        transform: rotate(-75deg);
+      }
+      ul:hover li:nth-last-child(6) {
+        background: rgb(221, 129, 240);
+        transform: rotate(-90deg);
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>7</li>
+      <li>6</li>
+      <li>5</li>
+      <li>4</li>
+      <li>3</li>
+      <li>2</li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img:nth-child(1) {
+        position: fixed;
+        width: 800px;
+        height: 600px;
+        margin-bottom: -30px;
+        bottom: 0px;
+        left: 390px;
+      }
+      img:nth-child(2) {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 150px;
+        animation-name: move;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+      }
+      img:nth-child(2):hover {
+        animation-play-state: paused;
+      }
+      @keyframes move {
+        0% {
+          transform: translate(0px, -300px) rotate(200deg);
+          left: 0px;
+        }
+        40% {
+          left: 500px;
+        }
+        50% {
+          left: 500px;
+        }
+        100% {
+          left: 1200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./images/tree.png" alt="" />
+    <img src="./images/xr.png" alt="" />
+  </body>
+</html>

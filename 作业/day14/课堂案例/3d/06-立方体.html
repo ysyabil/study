@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      div {
+        width: 200px;
+        height: 200px;
+        margin: 200px auto;
+        perspective: 1200px;
+        /* perspective-origin: left top; */
+        /* perspective-origin: center bottom; */
+      }
+      ul {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        list-style: none;
+        transform-style: preserve-3d;
+        /* transform: rotateX(15deg) rotateY(15deg); */
+        transition: 30s linear;
+        transform-origin: 100px 100px -100px;
+      }
+      ul:hover {
+        transform: rotateX(3600deg) rotateY(3600deg);
+      }
+      li {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border: 5px solid #000;
+        box-sizing: border-box;
+        background: rgba(24, 125, 240, 0.5);
+        font-size: 50px;
+        text-align: center;
+        line-height: 200px;
+      }
+      li:nth-child(1) {
+        top: -200px;
+        transform-origin: center bottom;
+        transform: rotateX(90deg);
+      }
+      li:nth-child(2) {
+        top: 200px;
+        transform-origin: center top;
+        transform: rotateX(-90deg);
+      }
+      li:nth-child(3) {
+        left: -200px;
+        transform-origin: right center;
+        transform: rotateY(-90deg);
+      }
+      li:nth-child(4) {
+        left: 200px;
+        transform-origin: left center;
+        transform: rotateY(90deg);
+      }
+      li:nth-child(5) {
+        transform: translateZ(-200px);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+      </ul>
+    </div>
+  </body>
+</html>

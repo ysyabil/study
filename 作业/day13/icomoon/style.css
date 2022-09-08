@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?uxh4i8');
+  src:  url('fonts/icomoon.eot?uxh4i8#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?uxh4i8') format('truetype'),
+    url('fonts/icomoon.woff?uxh4i8') format('woff'),
+    url('fonts/icomoon.svg?uxh4i8#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-about-dot-me:before {
+  content: "\e901";
+  color: #00a98f;
+}
+.icon-adobeaftereffects:before {
+  content: "\e902";
+  color: #d291ff;
+}
+.icon-adobepremiere:before {
+  content: "\e903";
+  color: #ea77ff;
+}
+.icon-adobexd:before {
+  content: "\e904";
+  color: #ff2bc2;
+}
+.icon-angellist:before {
+  content: "\e905";
+}
+.icon-angellist1:before {
+  content: "\e906";
+}
+.icon-apachekafka:before {
+  content: "\e907";
+}
+.icon-autotask:before {
+  content: "\e908";
+  color: #e51937;
+}
+.icon-bathasu:before {
+  content: "\e909";
+  color: #00a3e0;
+}
+.icon-bitrise:before {
+  content: "\e90a";
+  color: #683d87;
+}
+.icon-blackberry:before {
+  content: "\e90b";
+}
+.icon-home:before {
+  content: "\e900";
+}
+.icon-headphones:before {
+  content: "\e910";
+}
+.icon-music:before {
+  content: "\e911";
+}
+.icon-play:before {
+  content: "\e912";
+}
+.icon-film:before {
+  content: "\e913";
+}
+.icon-spades:before {
+  content: "\e917";
+}
+.icon-clubs:before {
+  content: "\e918";
+}
+.icon-library:before {
+  content: "\e921";
+}
+.icon-file-text:before {
+  content: "\e922";
+}
+.icon-profile:before {
+  content: "\e923";
+}
+.icon-file-picture:before {
+  content: "\e927";
+}
+.icon-library1:before {
+  content: "\e925";
+}
+.icon-profile1:before {
+  content: "\e924";
+}
+.icon-file-picture1:before {
+  content: "\e928";
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .body {
+        width: 800px;
+        height: 800px;
+      }
+      /* 正常渐变 */
+      .body div:nth-child(1) {
+        width: 300px;
+        height: 200px;
+        border-radius: 50%;
+        background-image: radial-gradient(circle, red 30%, yellow 80%);
+      }
+      /* color1大于color2的值 */
+      .body div:nth-child(2) {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-image: radial-gradient(circle, red 60%, yellow 30%);
+      }
+      /* 改变渐变中心点位置 */
+      .body div:nth-child(3) {
+        width: 200px;
+        height: 200px;
+
+        background-image: radial-gradient(at left top, red 30%, yellow 70%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>

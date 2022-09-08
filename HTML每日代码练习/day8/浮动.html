@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        div{
+            width: 300px;
+            height: 300px;
+            background: pink;
+        }
+        
+        .ins1{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+        .ins2{
+            width: 100px;
+            height: 100px;
+            background-color: antiquewhite;
+        }
+        .ins3{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+        }
+        div p{
+            float: left;
+        }
+        .box2 p{
+            float: right;
+        }
+        .set{
+            width: 800px;
+            height: 300px;
+            border: 2px solid #000;
+        }
+        .box3{
+            float: left;
+           border: 1px solid red;
+           width: 200px;
+           height: 100px;
+        }
+        .box4{
+            float: right;
+            border: 1px solid blueviolet;
+            width: 400px;
+            height: 100px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h2>左浮动</h2>
+    <div class="box1">
+        <p class="ins1">1</p>
+        <p class="ins2">2</p>
+        <p class="ins3">3</p>
+    </div>
+    <hr>
+    <br>
+    <h2>右浮动</h2>
+    <div class="box2">
+        <p class="ins1">1</p>
+        <p class="ins2">2</p>
+        <p class="ins3">3</p>
+    </div>
+    <hr>
+    <br>
+    <h2>两个大盒子水平不同方向浮动</h2>
+    <div class="set">
+        <div class="box3"></div>
+        <div class="box4">
+            <p class="ins1">1</p>
+            <p class="ins2">2</p>
+            <p class="ins3">3</p>
+            <p class="ins1">4</p>
+            <p class="ins2">5</p>
+            <p class="ins3">6</p>
+        </div>
+    </div>
+    
+</body>
+</html>

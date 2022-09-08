@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background: pink;
+      }
+      p {
+        font-size: 30px;
+      }
+      div:hover {
+        background: red;
+      }
+      div:hover p {
+        color: #fff;
+      }
+      /* 
+      
+      ：hover 配合后代选择器使用
+      div:hover p 
+      鼠标移入的是div 控制 div下的后代p的样式
+
+
+      栗子：
+        p:hover 
+        p:hover span {}
+        鼠标移入p，控制的是span的样式
+      */
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>我是一段文本</p>
+    </div>
+
+    <p>我是一段文本</p>
+  </body>
+</html>

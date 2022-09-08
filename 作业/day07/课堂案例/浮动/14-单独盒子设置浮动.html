@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .content {
+        width: 400px;
+        height: 400px;
+        background: #ccc;
+        margin: 0 auto;
+      }
+      p {
+        width: 100px;
+        height: 100px;
+        font-size: 30px;
+      }
+      .item1 {
+        background: red;
+        float: left;
+      }
+      .item2 {
+        background: yellow;
+        width: 150px;
+      }
+      .item3 {
+        background: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        文档流
+        块元素：每一个内容都是占位，垂直显示
+        行内和行内块元素：每一个内容都是占位，从左往右水平排列
+
+
+       浮动：
+            1、元素浮动脱离文档流（脱离半层），不占位 ，会造成盒子重叠，文本，图片，表单元素不重叠；
+            
+     -->
+    <div class="box1 content">
+      <p class="item1">1</p>
+      <p class="item2">2</p>
+      <p class="item3">3</p>
+    </div>
+  </body>
+</html>

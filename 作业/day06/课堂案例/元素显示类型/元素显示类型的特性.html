@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div,
+      span,
+      img {
+        width: 200px;
+        height: 200px;
+        font-size: 30px;
+        border: 5px solid #000;
+        margin: 50px;
+        /* 4个方向外边距50px */
+      }
+    </style>
+  </head>
+  <body>
+    <h2>元素类型显示特性</h2>
+    <hr />
+    <div>块元素</div>
+    <div>块元素</div>
+    <span>行内元素</span>
+    <span>行内元素</span>
+    <img src="../images/xiuqin.jpg" alt="" />
+    <img src="../images/xiuqin.jpg" alt="" />
+
+    <!-- 
+        css把元素分成3类
+
+        块元素:div/p/pre/h1~h6/ol,ul,li,dl,dt,dd,form/fieldset和legend/option/hr
+            1、上下排列，独占一行，自动换行
+            2、块元素可以设置宽高
+            3、块可以设置4个方向的内外边距
+            4、块元素一般当做其他元素的容器
+            特殊： p/h1~h6/dt 
+
+        行内元素：span、strong、em、a、sub、sup、ins、del、label、br(特性)
+            1、水平显示，一行显示多个
+            2、行内元素不能设置宽高，行内元素的宽高由内容撑开
+            3、只能设置水平方向的内边距和外边距
+            4、可以嵌套同类型
+
+
+        行内块元素：img/input/textarea/select
+            1、水平显示，一行显示多个
+            2、行内块可以设置宽高
+            3、可以设置4个方向的内外边距
+            4、可以嵌套同类型，也可以嵌套行内元素
+     -->
+  </body>
+</html>

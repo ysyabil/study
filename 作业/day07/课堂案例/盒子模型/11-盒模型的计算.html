@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      div,
+      p {
+        width: 200px;
+        height: 200px;
+        padding: 50px;
+        border: 10px solid #000;
+        margin: 100px;
+      }
+      p {
+        box-sizing: border-box;
+      }
+      input {
+        height: 50px;
+        padding: 2px;
+        border: 1px solid red;
+      }
+      /* 
+        盒模型的计算
+
+        box-sizing:
+                    border-box (怪异盒计算)
+                    content-box（标准盒子计算，默认值）
+
+        标准盒模型计算
+        盒子的总宽高  = width/height（宽高）+padding（内边距）+border（边框）
+
+        怪异盒模型计算 （提交按钮）
+         盒子的总宽高 = width/height （包含padding和border）
+      */
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <p></p>
+    <!-- <input type="submit" /> -->
+  </body>
+</html>

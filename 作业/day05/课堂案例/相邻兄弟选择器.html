@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h3 + p {
+        color: red;
+        font-size: 20px;
+      }
+      h3 ~ p {
+        color: red;
+        font-size: 20px;
+      }
+      /* 
+      相邻兄弟选择器
+        哥哥 +  弟弟
+        通过哥哥选择自己同级的下一个弟弟
+
+      通用兄弟选择器
+         哥哥 ~ 弟弟
+        通过哥哥选择自己同级的下的所有弟弟
+      */
+    </style>
+  </head>
+  <body>
+    <h2>相邻兄弟选择器</h2>
+    <hr />
+    <p>起来</p>
+    <p>不愿做奴隶的人民</p>
+    <p>把我们的血肉筑成我们新的长城</p>
+    <h3 class="h3">中华民族到了</h3>
+    <p>最危险的时候</p>
+    <p>2022</p>
+    <p>中国加油</p>
+  </body>
+</html>

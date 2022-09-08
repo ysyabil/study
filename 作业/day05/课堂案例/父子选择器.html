@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p > span {
+        color: green;
+      }
+      /* 
+        父子选择器 > 子元素
+            通过父元素选择自己的子元素，只能往下选择一层
+      */
+    </style>
+  </head>
+  <body>
+    <h2>父子选择器</h2>
+    <hr />
+    <div class="box">
+      我是你爹
+      <p>
+        <span> 我是隔壁老王的儿子</span>
+      </p>
+    </div>
+
+    <p>我是隔壁老王</p>
+  </body>
+</html>

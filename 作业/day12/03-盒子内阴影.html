@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 250px;
+        background: #ccc;
+        margin: 50px auto;
+        position: relative;
+        top: 0px;
+        transition: 0.5s;
+        /* 设置过渡0.5秒 */
+      }
+      .box:hover {
+        box-shadow: 5px 0px 0px 0px red inset, -5px 0px 0px 0px yellow inset,
+          0px 5px 0px 0px orange inset, 0px -5px 0px 0px pink inset;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <!-- 
+        盒子阴影（叠加用逗号隔开）
+        box-shadow：
+                水平  垂直 模糊度  大小  颜色  内阴影（inset）
+
+        内阴影：
+                水平 正   左边显示
+                     负  右边显示
+
+                垂直 正   上边显示
+                     负   下边显示
+
+     -->
+  </body>
+</html>

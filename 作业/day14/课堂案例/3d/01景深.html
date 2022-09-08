@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        width: 800px;
+        height: 300px;
+        border: 3px solid #000;
+        margin: 100px auto;
+        list-style: none;
+      }
+      li {
+        width: 150px;
+        height: 100px;
+        margin: 80px 20px;
+        background: orange;
+        float: left;
+        transform: rotateY(30deg);
+      }
+      ul:nth-child(1) {
+        perspective: 400px;
+        /* 父元素设置景深（每个子元素的景深效果各不相同） */
+      }
+      ul:nth-child(2) li {
+        transform: perspective(400px) rotateY(30deg);
+        /* 子元素设置景深（每个子元素的景深都一样） */
+      }
+    </style>
+  </head>
+  <body>
+    <!--  
+      景深（近大远小）
+      合理：400-900
+      景深有两种：
+          父元素设置景深（每个子元素的景深效果各不相同）
+              perspective ：
+
+          子元素设置景深（每个子元素的景深都一样）
+              transform： perspective（）
+    -->
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+    </ul>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .one {
+            height: 956px;
+            background-image: url('./img/01.jpg');
+            /*  background-image: url('./img/yinyang-sm.png'); */
+            background-repeat: no-repeat;
+            background-position: center top;
+            /* border: 1px solid green; */
+        }
+
+        .two {
+            height: 321px;
+            background-image: url('./img/02.png');
+            background-repeat: no-repeat;
+            background-position: center top;
+        }
+
+        .three {
+            height: 600px;
+            background-image: url('./img/03.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            /* border: 1px solid green; */
+        }
+
+        .four {
+            height: 584px;
+            /* border: 1px solid green; */
+        }
+
+        .four>div {
+            position: relative;
+            margin: 0 auto;
+            width: 960px;
+            height: 584px;
+            /* border: 1px solid green; */
+        }
+
+        .four>div::before {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            content: '';
+            width: 664px;
+            height: 763px;
+            /* border: 1px solid red; */
+            background-image: url('./img/05.png');
+        }
+
+        .four>div::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 120px;
+            width: 487px;
+            height: 107px;
+            background-image: url('./img/04.png');
+            /* border: 1px solid black; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four">
+        <div></div>
+    </div>
+</body>
+
+</html>

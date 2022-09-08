@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+      }
+      .content {
+        width: 300px;
+        height: 300px;
+        background: #ccc;
+        /* border: 5px solid #000; */
+        /* padding-top: 1px; */
+        /* overflow: hidden; */
+      }
+      p {
+        width: 100px;
+        height: 100px;
+        border: 2px solid red;
+        background: yellowgreen;
+        margin-top: 50px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+          4、margin常见的bug
+            1、margin重叠问题
+                    两个盒子之间垂直方向的margin会重叠，谁的距离大设置谁
+                    解决方法：给一个盒子设置就行
+
+            2、margin-top的传递问题
+                父元素下的第一个子元素设置margin-top的时候，margin-top会错误的传递给父元素
+
+                 解决方法
+                     父元素: 
+                          1、border-top;
+                          2、padding-top;
+                          3、overflow:hidden;
+                     子元素：（水平显示）
+                        display:inline-block
+                        
+     -->
+    <h2>margin-top的传递问题</h2>
+    <hr />
+
+    <div class="content">
+      <p>1</p>
+      <p>2</p>
+      <p>3</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .content {
+        padding: 10px;
+        width: 700px;
+        height: 800px;
+        border: 5px solid #888;
+        margin: 0 auto;
+        background: orange;
+        font-size: 32px;
+        text-align: center;
+      }
+      .top,
+      .bottom {
+        height: 100px;
+        border: 5px solid #888;
+        background: #ccc;
+      }
+      .center {
+        margin: 10px 0px;
+        border: 5px solid #888;
+        overflow: hidden;
+      }
+      nav,
+      section,
+      aside {
+        float: left;
+        height: 530px;
+      }
+      nav,
+      aside {
+        width: 150px;
+        border: 5px solid #888;
+        background: #ccc;
+      }
+      section {
+        margin: 0px 10px;
+        padding: 0px 10px;
+        width: 320px;
+        border: 5px solid #888;
+        background: #ccc;
+      }
+      section header,
+      section footer {
+        height: 100px;
+        border: 5px solid #888;
+      }
+      article {
+        margin: 15px 0px;
+        height: 250px;
+        border: 5px solid #888;
+      }
+    </style>
+
+    <!--[if lt IE 8]>
+      <script src="../js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="content">
+      <header class="top">top</header>
+      <div class="center">
+        <nav>nav</nav>
+        <section>
+          <header>header</header>
+          <article>article</article>
+          <footer>footer</footer>
+        </section>
+        <aside>aside</aside>
+      </div>
+      <footer class="bottom">bottom</footer>
+    </div>
+  </body>
+</html>

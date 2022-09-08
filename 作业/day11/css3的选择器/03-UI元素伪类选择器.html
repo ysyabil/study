@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input:enabled {
+        border: 5px solid green;
+      }
+      input:disabled {
+        border: 5px solid red;
+      }
+
+      input[type="checkbox"]:checked + label {
+        color: red;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <!-- <input type="text" />
+      <input type="text" />
+      <input type="text" disabled /><br /> -->
+
+      <input type="checkbox" /><label for="">苹果</label>
+      <input type="checkbox" /><label for="">榴莲</label>
+      <input type="checkbox" /><label for="">橘子</label>
+    </form>
+  </body>
+</html>

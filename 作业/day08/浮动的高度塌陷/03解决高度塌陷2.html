@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        width: 500px;
+        height: auto;
+        border: 4px solid #000;
+        margin: 0 auto;
+      }
+      p {
+        width: 120px;
+        height: 100px;
+        background: orange;
+        margin-right: 20px;
+        border: 2px solid green;
+        float: left;
+      }
+      .last {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+       高度塌陷
+       父元素的高度由内容撑开，内容浮动后不占位，父元素识别不了内容的高度，就会出现高度塌陷
+
+          解决：
+            1、 父元素设置overflow:hidden;
+
+           原理：overflow可以触发BFC（就是一个封闭的大盒子，有自己的布局方式），BFC的区域内，浮动元素也参与高度计算
+
+            2、 清除浮动（原理是元素上方设置造墙，把浮动元素和整合盒子隔开）
+                clear:（块元素）
+                        left  清除左浮动
+                        right 清除右浮动
+                        both  清除两边浮动
+
+            在所有浮动元素的最下方设置一个空盒子，给空盒子设置clear：both，让空盒子把父元素的高度撑开
+
+            3、
+                ::after
+
+     -->
+    <h2>高度塌陷</h2>
+    <div class="box">
+      <p>1</p>
+      <p>2</p>
+      <p>1</p>
+      <p>2</p>
+      <p>3</p>
+      <p>1</p>
+      <p>2</p>
+      <p>3</p>
+      <div class="last"></div>
+    </div>
+  </body>
+</html>

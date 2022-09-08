@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        width: 800px;
+        height: 500px;
+        border: 3px solid #000;
+        margin: 100px auto;
+        list-style: none;
+        font-size: 30px;
+      }
+      li {
+        width: 150px;
+        height: 100px;
+        background: orange;
+        border: 2px solid #000;
+        box-sizing: border-box;
+      }
+      ul:nth-of-type(1) {
+        display: flex;
+        flex-wrap: wrap;
+        /* align-content: flex-start; */
+        /* align-content: flex-end;
+        align-content: center;
+        align-content: space-between;
+        align-content: space-evenly; */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        设置侧轴（多行）对齐（先确定主轴）
+         align-content: 
+           整体对齐
+             flex-start  侧轴顶端，取消行间距
+             flex-end    侧轴底端，取消行间距
+             center      侧轴居中，取消行间距
+
+              自适应显示
+                        justify-content: space-between;
+                        /* 两端对齐，中间自适应 */
+                        justify-content: space-around;
+                        /* 左右都有距离，中间是双倍 */
+                        justify-content: space-evenly;
+                        /* 所有的距离都相等 */
+             
+
+                    
+     -->
+    <h2>主轴是x轴</h2>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+    </ul>
+    <h2>主轴是Y轴</h2>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <!-- <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li> -->
+    </ul>
+  </body>
+</html>

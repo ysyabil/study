@@ -1,0 +1,142 @@
+{
+  "id": "3555466",
+  "name": "字体图标",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "30747884",
+      "name": "大数据",
+      "font_class": "ambitus05",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "30747888",
+      "name": "云智能",
+      "font_class": "ambitus06",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "30747889",
+      "name": "百货",
+      "font_class": "format02",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "30747894",
+      "name": "便利店",
+      "font_class": "format03",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "30747901",
+      "name": "快消品",
+      "font_class": "industry01",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "30747903",
+      "name": "跨境电商",
+      "font_class": "format10",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "30747904",
+      "name": "茶叶",
+      "font_class": "industry09",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "30747905",
+      "name": "服装",
+      "font_class": "industry04",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "30747914",
+      "name": "云餐饮",
+      "font_class": "product08",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "30747915",
+      "name": "零售行业",
+      "font_class": "industry05",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "27888844",
+      "name": "咖啡",
+      "font_class": "kafei",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "27888845",
+      "name": "薯条",
+      "font_class": "shutiao",
+      "unicode": "e658",
+      "unicode_decimal": 58968
+    },
+    {
+      "icon_id": "27888898",
+      "name": "珍珠奶茶",
+      "font_class": "zhenzhunaicha",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "27923405",
+      "name": "甜筒",
+      "font_class": "tiantong",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    },
+    {
+      "icon_id": "27960609",
+      "name": "爆米花",
+      "font_class": "baomihua",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "27961008",
+      "name": "马卡龙",
+      "font_class": "makalong",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    },
+    {
+      "icon_id": "28385957",
+      "name": "泡面",
+      "font_class": "paomian",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    },
+    {
+      "icon_id": "28431693",
+      "name": "寿司",
+      "font_class": "shousi",
+      "unicode": "e691",
+      "unicode_decimal": 59025
+    },
+    {
+      "icon_id": "28497126",
+      "name": "肘子",
+      "font_class": "zhouzi",
+      "unicode": "e697",
+      "unicode_decimal": 59031
+    }
+  ]
+}

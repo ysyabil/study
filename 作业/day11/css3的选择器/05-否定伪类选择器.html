@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      li {
+        margin: 20px;
+      }
+      li:not(#first-child) {
+        background: #ccc;
+      }
+      /* li:not(.list) {
+        border: 2px solid red;
+      } */
+      li:not(:nth-child(3n)) {
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li id="first-child"><a href="">内容1</a></li>
+      <li class="list"><a href="">内容2</a></li>
+      <li>
+        <a href="">内容3</a>
+        <a href="">内容3</a>
+        <a href="">内容3</a>
+        <a href=""></a>
+      </li>
+      <li><a href="">内容4</a></li>
+      <li><a href="">内容5</a></li>
+      <li><a href="">内容6</a></li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        margin: 50px;
+        width: 200px;
+        height: 100px;
+        background-image: linear-gradient(-20deg, red, blue);
+        background-image: -webkit-linear-gradient(110deg, red, blue);
+      }
+      article {
+        margin: 50px;
+        width: 200px;
+        height: 100px;
+        background-image: -webkit-linear-gradient(110deg, red, blue);
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <article></article>
+
+    <!-- 
+        线性渐变：
+        background-image ：linear-gradient（渐变的方向，颜色1，颜色2）
+       
+        渐变的方向： 
+                水平和垂直
+                    to left
+                    to right
+                    to top
+                    to bottom  （默认值，从上到下）
+
+                兼容（不加to）：left、right、top、bottom
+
+                对角
+                    to  left top
+                    to  right top
+                    to  left bottom
+                    to  right bottom
+
+                角度值（deg）
+                  0deg, to top: 从下倒上
+                 正值：顺时针
+                 负值：逆时针
+
+                兼容:
+                    90deg- 标准
+                
+        css3的渐变：线性渐变、径向渐变，重复渐变
+        以背景图片的形式显示
+     -->
+  </body>
+</html>

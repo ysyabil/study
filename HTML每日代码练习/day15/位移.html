@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 400px;
+        height: 230px;
+        border: 5px solid #000;
+        position: relative;
+      }
+      p {
+        width: 200px;
+        height: 180px;
+        background: pink;
+      }
+      .div1:hover p {
+        transform: translate(50px, 60px);
+      }
+      .div2:hover p {
+        transform: translate(50px);
+      }
+      .div3 p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+      <p></p>
+    </div>
+    <div class="div2">
+      <p></p>
+    </div>
+    <div class="div3">
+      <p></p>
+    </div>
+  </body>
+</html>

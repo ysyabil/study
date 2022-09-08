@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 2000px;
+      }
+      .box {
+        width: 400px;
+        height: auto;
+        margin: 0 auto;
+        border: 5px solid #000;
+        /* position: relative; */
+        /* position: absolute; */
+      }
+      p {
+        width: 100px;
+        height: 100px;
+        border: 2px solid red;
+        background: #ccc;
+        font-size: 30px;
+        box-sizing: border-box;
+      }
+      .child2 {
+        position: absolute;
+        /* 绝对定位 */
+        right: 0px;
+        bottom: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        网页的3种布局
+            文档流排列（元素类型默认的排列）
+            浮动布局
+            定位
+
+    定位：相对定位、绝对定位、固定定位、粘性定位
+    定位特性：  元素定位后可以触发5个属性
+                4个方向：left 、 right、top、bottom
+                1个层级关系 z-index
+
+    固定定位
+    position:fixed
+    1、不占位，脱离文档流
+    2、位置移动始终是以浏览器窗口的可视区为位置移动的参照物
+     -->
+
+    <div class="box">
+      <p class="child1">1</p>
+      <p class="child2">2</p>
+      <p class="child3">3</p>
+    </div>
+  </body>
+</html>

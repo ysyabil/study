@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      .tree {
+        height: 600px;
+        position: fixed;
+        bottom: -50px;
+        left: 500px;
+      }
+      .xr {
+        width: 150px;
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+        /* animation-name: move; */
+        /* 动画名 */
+        /* animation-duration: 2s; */
+        /* 动画执行时间 */
+        /* animation-fill-mode: none; */
+        /* 运动完停止在结束位置 */
+        /* animation-direction: alternate; */
+        /* 反方向运动 */
+        /* animation-iteration-count: infinite; */
+        /* 设置运动次数 */
+        /* animation-delay: 1s; */
+        /* 动画延迟 */
+        /* animation-timing-function: steps(3); */
+        /* 动画执行速度 */
+
+        animation: move 5s linear infinite alternate;
+      }
+      .xr:hover {
+        animation-play-state: paused;
+        /* 设置动画停止 */
+      }
+      @keyframes move {
+        0% {
+          transform: translate(0px, -180px) rotate(180deg);
+          left: 0px;
+        }
+        40% {
+          left: 500px;
+        }
+        60% {
+          left: 500px;
+        }
+        100% {
+          left: 1200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img src="../images/tree.png" alt="" class="tree" />
+    <img src="../images/xr.png" alt="" class="xr" />
+
+    <!--
+      0%   0px
+      40%  500px
+      60%  500px
+      100% 1200px
+
+        animation动画设置分为两步
+        1：创建动画
+            @keyframes 动画名{
+                0%{}
+                100%{}
+            }
+            @keyframes 动画名{
+                from{}
+                to{}
+            }
+        2:执行动画
+            animation:（1动画名 2执行时间） 3延迟  4速度  5运动的次数   6顺序  7运动状态  8运动停止的位置
+      -->
+  </body>
+</html>

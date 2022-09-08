@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*ul{
+    list-style: none;
+}
+
+/* 网页头部 */
+.head{
+    width: 962px;
+    height: 100px;
+    margin: 0 auto;
+}
+.head-left{
+    width: 280px;
+    height: 32px;
+    float: left;
+    font-size: 32px;
+    
+}
+.head-right{
+    width: 230px;
+    height: 28px;
+    float: right;
+    margin-top: 30px;
+    font-size: 30px;
+}
+.head-right-f{
+    float: right;
+}
+/* 网页导航 */
+.nav{
+    width: 962px;
+    height: 58px;
+    margin: 0 auto;
+    background-color: #323232
+   
+}
+.naving li{
+    width: 120px;
+    height: 58px;
+    color: aliceblue;
+    float: left;
+    
+
+}
+/* 网页图片 */
+.img{
+    width: 962px;
+    height: 466px;
+    margin: 0 auto;
+}
+.img img{
+    height: 100%;
+    width: 100%;
+}
+/* 公司简介 */
+/* 新闻 */
+.show{
+    width: 962px;
+    height: 240px;
+    margin: 0 auto;
+    
+}
+.news{
+    width:480px;
+    height:80px;
+    float: left;
+}
+.news-a{
+    width:480px;
+    height:160px;
+   
+}
+.news1-1{
+    width:312px ;
+    height:160px;
+    float: left;
+}
+.news1-2{
+    width: 168px;
+    height:160px;
+    float: right;
+}
+.news1-1 li{
+    font-size: 8px;
+}
+.news1-2 li{
+    font-size: 8px;
+    list-style: none;
+}
+/* 公司介绍 */
+.introduce{
+    width: 240px;
+    height:240px ;
+    background-color:#f1f1f1 ;
+    float: left;
+}
+.introduce-1{
+    width: 240px;
+    height: 92px;
+}
+.introduce-2{
+    width: 240px;
+    height: 63px;
+}
+.introduce-3{
+    width: 240px;
+    height:85px;
+    color: #cacaca;
+}
+/* 人力招聘 */
+.recruit{
+    width:242px ;
+    height:240px;
+    float: left;
+}
+.recruit-1{
+    width:242px ;
+    height:78px;
+}
+.recruit-2{
+    width:242px ;
+    height:39px;
+    color: #a8a8a8;
+}
+.recruit-3{
+    width:242px ;
+    height:123px;
+}
+.recruit img{
+    width: 100%;
+    height: 100%;
+}
+/* 市场项目 */
+.market{
+    width: 962px;
+    height: 262px;
+    margin: 0 auto;
+    
+}
+.market-1{
+    width: 962px;
+    height:64px;
+    
+}
+.market-2{
+    width: 962px;
+    height:198px;
+   
+}
+.market-2-1{
+    width: 208px;
+    height:198px;
+    float: left;
+    font-size: 8px;
+    color: #535353;
+}
+.market-2-1 img{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+.market-2-2{
+    width: 208px;
+    height:198px;
+    float: left;
+    margin-left: 42px;
+    font-size: 8px;
+    color: #535353;
+}
+.market-2-2 img{
+    width: 100%;
+    height: 100%;
+}
+.market-2-3{
+    width: 208px;
+    height:198px;
+    float: left;
+    margin-left: 42px;
+    font-size: 8px;
+    color: #535353;
+}
+.market-2-3 img{
+    width: 100%;
+    height: 100%;
+}
+.market-2-4{
+    width: 208px;
+    height:198px;
+    float: left;
+    margin-left: 42px;
+    font-size: 8px;
+    color: #535353;
+}
+.market-2-4 img{
+    width: 100%;
+    height: 100%;
+}
+/* 产品中心 */
+
+
+.product{
+    width: 962px;
+    height:252px ;
+    background: #e5e5e5;
+    margin: 0 auto;
+    color: #847d67;
+    margin-top:200px;
+}
+.product-1{
+    width:450px;
+    height:252px;
+    float: left;
+}
+.product-1-1{
+    width:450px;
+    height:58px;
+}
+.product-1-2{
+    width:450px;
+    height:193px;
+}
+.product-1-2-1{
+    width:150px;
+    height:194px;
+    float: left;
+}
+.product-1-2-2{
+    width:190px;
+    height:194px;
+    float: left;
+}
+
+.product-1-2-3{
+    width:110px;
+    height:194px;
+    float: left;
+}
+.product-2{
+    width: 150px;
+    height: 252px;
+    float: left;
+    margin-left:54px;
+}
+.product-2-1{
+    width:150px ;
+    height:58px ;
+}
+.product-2-2{
+    width:150px ;
+    height:194px ;
+}
+.product-3{
+    width:260px ;
+    height:252px ;
+    float: left;
+    margin-left:45px;
+}
+.product-3-1{
+    width:260px ;
+    height:58px ;
+}
+.product-3-2{
+    width:260px ;
+    height:194px ;
+}
+.product-3-2 img{
+    width: 100%;
+    height: 100%;
+}
+.bottom{
+    width: 962px;
+    height:82px ;
+}
+.bottom-1{
+    width: 368px;
+    height:82px ;
+    font-size: 6px;
+    float: left;
+}
+.bottom-1 li{
+    float: left;
+}
+.bottom-2{
+    width: 594px;
+    height:82px ;
+    font-size:4px;
+    float: left;
+}

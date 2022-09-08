@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a:link {
+        color: pink;
+      }
+      a:visited {
+        color: yellow;
+      }
+      a:hover {
+        color: orange;
+      }
+      a:active {
+        color: green;
+      }
+
+      div {
+        width: 100px;
+        height: 100px;
+        background: #ccc;
+      }
+      div:hover {
+        width: 200px;
+        height: 200px;
+        background: red;
+      }
+      div:active {
+        background: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>伪类选择器</h2>
+    <hr />
+
+    <a href="#123asd">超链接</a>
+    <div id="box"></div>
+
+    <!-- 
+        伪类选择器：选择元素在那个状态下设置的样式
+        :link   元素访问前的状态
+        :visited 元素访问后的状态
+        :hover   鼠标悬停状态
+        :active  鼠标按钮，用户激活状态
+
+        link=> visited=>hover=>active
+
+
+    思考题：
+        1.无序列表用通配符选择器去点，设置字体颜色黄色，标签选择器设置颜色为橙色
+                *{
+                    list-style:none;  取消列表的默认样式
+                }
+
+
+        2、div标签 是什么颜色
+             内联样式表设置颜色 红色
+             id选择器设置颜色   粉色
+
+        3、 <div id="box"></div>
+            id选择器设置颜色 红色
+            鼠标移入颜色是绿色 
+
+        4、 span的颜色是什么颜色？
+            <p>
+            <span class="text"> 内容</span>
+            </p>
+        
+        p > span{ color:yellow;}
+        .text{color:green}
+
+
+     -->
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            color: red;
+        }
+        #box:hover{color: aqua;}
+        /* 如果有相同元素时一定要比较选择器的权重
+           如果给div设置hover的话则悬浮设置不会管用因为div的权重小于#
+           想要给div的内容加上悬浮设置则需要给#设置hover
+         */
+
+        /* hover配合后代选择器使用
+           当鼠标移动到div的背景时想要同时使hover对div和p都起作用，则先对父元素做hover改变，之后在设置父元素+子元素的hover设置，如div：hover p{}
+
+           hover配合其他选择器一起使用
+           相邻兄弟选择器：div：hover+p
+           群组选择器：li：hover，p
+        */
+        div{
+            background-color: bisque;
+            width: 60px;
+            height: 50px;
+        }
+        div:hover{background-color: aqua;}
+        div:hover p{color: blueviolet;}
+
+    </style>
+</head>
+<body>
+    <div id="box">
+        <p> 我是一个盒子</p>
+       
+    </div>
+</body>
+</html>

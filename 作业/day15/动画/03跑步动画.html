@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 180px;
+        height: 300px;
+        border: 4px solid #000;
+        position: absolute;
+        left: 0px;
+        background: url(../images/charector.png) no-repeat 0px 0px;
+        animation: late 0.1s steps(6) infinite, move 3s linear infinite;
+      }
+
+      @keyframes late {
+        0% {
+          background-position: 0px 0px;
+        }
+        100% {
+          background-position: -1080px 0px;
+        }
+      }
+
+      @keyframes move {
+        0% {
+          transform: translate(0px, -180px) rotate(180deg);
+          left: 0px;
+        }
+        40% {
+          left: 500px;
+        }
+        60% {
+          left: 500px;
+        }
+        100% {
+          left: 1200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

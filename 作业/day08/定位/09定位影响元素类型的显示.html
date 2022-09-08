@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: 100px;
+        /* position: absolute; */
+        background: pink;
+        border: 2px solid #000;
+      }
+      span {
+        width: 100px;
+        height: 100px;
+        background: orange;
+        border: 2px solid #000;
+        margin: 50px;
+        position: absolute;
+        position: relative;
+      }
+      /* 
+      脱离文档流不占位的定位（绝对，固定）
+       块元素：
+            1、盒子重叠
+            2、不设置宽度，宽度由内容撑开
+       行内元素：
+            1、盒子重叠
+            2、能设置宽高，能设置4个方向的内外边距
+       行内块元素：
+            1、盒子重叠   
+      */
+    </style>
+  </head>
+  <body>
+    <div>块元素1</div>
+    <div>块元素2</div>
+    <span>行内元素</span>
+    <span>行内元素</span>
+  </body>
+</html>

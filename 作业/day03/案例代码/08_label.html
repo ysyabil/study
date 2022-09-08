@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>label</h1>
+    <hr />
+    <form action="">
+      <p>
+        <label for="username">姓名:</label>
+        <input type="text" maxlength="5" id="username" />
+      </p>
+      <p>
+        性别：
+        <input type="radio" name="sex" checked id="man" />
+        <label for="man">男</label> <input type="radio" name="sex" />女
+        <input type="radio" name="sex" disabled />0.5
+      </p>
+      <p>
+        地址：
+        <select name="" id="">
+          <option value="" disabled selected>--请您选择地区--</option>
+          <option value="">黄石</option>
+          <option value="">襄阳</option>
+          <option value="">恩施</option>
+        </select>
+      </p>
+      <p>
+        <label for="fil">上传文件</label>
+        <input type="file" id="fil" />
+      </p>
+
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        style="resize: none"
+      ></textarea>
+    </form>
+  </body>
+</html>

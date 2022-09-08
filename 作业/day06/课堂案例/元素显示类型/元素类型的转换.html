@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span,
+      div {
+        width: 100px;
+        height: 100px;
+        border: 5px solid #000;
+        /* display: inline-block; */
+        /* 转换行内块元素 */
+        display: block;
+        /* 转换块元素 */
+      }
+      span {
+        display: none;
+        display: block;
+      }
+      div {
+        display: inline;
+        /* 转换行内元素 */
+      }
+    </style>
+  </head>
+  <body>
+    <h2>元素类型的转换</h2>
+    <hr />
+
+    <span>行内元素</span>
+    <span>行内元素</span>
+
+    <div>块元素</div>
+    <div>块元素</div>
+    <!-- 
+        元素类型的转换 display：18个值
+                            block  块元素
+                            inline 行内元素
+                            inline-block 行内块元素
+                            none    元素隐藏（不占位）
+
+     -->
+  </body>
+</html>

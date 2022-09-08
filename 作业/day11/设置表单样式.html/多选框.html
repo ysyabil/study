@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      input {
+        width: 50px;
+        height: 50px;
+      }
+      input::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 50px;
+        border: 2px solid orange;
+        box-sizing: border-box;
+        background: #fff;
+      }
+      input:checked::after {
+        content: "x";
+        font-size: 40px;
+        background: orange;
+        color: #fff;
+        text-align: center;
+        line-height: 46px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="checkbox" />
+  </body>
+</html>
+
+<!-- 
+        基础作业
+
+        练习作业
+            单选和多选样式
+            后台系统的布局结构
+ -->

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+
+        1、基本选择器
+    内联样式表 1000 >  id 100 > class 10 > 标签选择器 1 > 通配符 0 > 继承样式
+    
+    注意： 设置 ！important 声明css声明的权重，比内联样式表还要高！
+
+        2、父子和后代选择器（计算所有选择器的权重值和）
+        栗子：
+            .box > span    10+1 =11
+            #content p     100 =101
+            div p          1+1=2
+
+        3、相邻兄弟选择器（计算所有选择器的权重值和）
+        栗子： div+p    1+1 = 2
+              .h3+p     10+1=11
+        4、并集（群组）和交接选择器（计算所有选择器的权重值和）
+            p,div,.box{
+                color:red;
+            }
+            div{
+                color:blue
+            }
+        并集（群组）选择器不会造成权重冲突，需要注意书写顺序，谁在下面设置谁
+
+           div.box   1+10 =11
+        
+        5、伪类选择器(自身的权重10 ，相加)
+            :link   元素访问前的状态
+            :visited 元素访问后的状态
+            :hover   鼠标悬停状态
+            :active  鼠标按钮，用户激活状态
+
+        栗子：
+            div:hover     1+10=11
+            .child:hover  10+10=20
+     -->
+  </body>
+</html>

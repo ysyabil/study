@@ -1,0 +1,561 @@
+.*{
+    padding: 0;
+    margin: 0;
+}
+/* 网页导航 */
+.nav{
+    width:1200px ;
+    height: 100px;
+    margin: 0 auto;0
+    background: #f4f5f9;
+    line-height: 100px;
+}
+.nav-1{
+    width:196px;
+    height: 100px;
+    float: left;
+}
+.nav-1 img{
+    width:100% ;
+    height: 100%;
+}
+.nav-2{
+    width: 56px;
+    height:100px ;
+    float: left;
+    margin-left: 70px;
+    
+}
+.nav-3{
+    width: 56px;
+    height: 100px;
+    float: left;
+    margin-left: 24px;
+}
+.nav-4{
+    width: 78px;
+    height: 100px;
+    float: left;
+    margin-left: 24px;
+}
+.nav-5{
+    width: 414px;
+    height:100px ;
+    float: left;
+    margin-left: 96px;
+}
+.nav-6{
+    width: 186px;
+    height:100px ;
+    float: left;
+}
+.nav-6 img{
+    width:100% ;
+    height: 100%;
+}
+/* 主页图片 */
+.page{
+    width:1200px;
+    height:421px;
+    background: #99d1ff;
+    margin: 0 auto;
+}
+.page1{
+    width:192px;
+    height:423px;
+    float: left;
+    color: aliceblue;
+}
+.page1 div{
+    width: 192px;
+    height: 47px;
+
+}
+.page2{
+    width:229px;
+    height:300px;
+    float: right;
+    background: #f4f5f9;
+    
+}
+.page2-1,.page2-2,.page2-3,.page2-4,.page-5{
+    width: 229px;
+    height:60px ;
+}
+.page2-1{
+    background: #9bceeb;
+    color: aliceblue;
+}
+.page2-1 span{
+    color: #bfbfbf;
+}
+.page2-2{
+    background: #f4f5f9;
+    
+}
+.page2-2 span{
+    color: #bfbfbf;
+}
+.page2-3{
+    background: #f4f5f9;
+    
+}
+.page2-3 span{
+    color: #bfbfbf;
+}
+.page2-4{
+    background: #f4f5f9;
+    
+}
+.page2-4 span{
+    color: #06309e;
+}
+.page2-5 img{
+    width: 100%;
+    height: 100%;
+}
+/* 导航二 */
+.naving{
+    width: 1200px;
+    height: 62px;
+    margin: 0 auto;
+    margin-top: 6px;
+    border: 1px solid #e1e0e5;
+}
+.naving span{
+    display: block;
+    width: 126px;
+    height:62px ;
+    float: left;
+    line-height: 62px;
+}
+.naving1{
+    color: #06309e;
+}
+.naving2{
+    color: #06309e;
+    float: right;
+    line-height: 62px;
+}
+/* 精品推荐 */
+.recommend1{
+    width: 1200px;
+    height:75px ;
+    margin: 0 auto;
+    background: #f4f5f9;
+}
+.recommend1-1{
+    width: 86px;
+    height:75px ;
+    float: left;
+    color: #6d6e70;
+    line-height: 62px;
+}
+.recommend1-2{
+    width: 50px;
+    height:75px ;
+    float: right;
+    color: #a4a5a7;
+    font-size: 10px;
+    line-height: 62px;
+}
+.img{
+    width: 1200px;
+    height: 554px;
+    margin: 0 auto;
+}
+.img img{
+    width:228px ;
+    height:268px ;
+    float: left;
+}
+.img2,.img3,.img4,.img5,.img7,.img8,.img9,.img10{
+    margin-left: 14px;
+}
+.img6,.img7,.img8,.img9,.img10{
+    margin-top: 14px;
+}
+/* 编程入门 */
+.it1{
+    width: 1200px;
+    height: 79px;
+    margin: 0 auto;
+    background: #f4f5f9;
+    line-height: 79px;
+}
+.it1-1{
+    width: 78px;
+    height: 79px;
+    float: left;
+}
+.it1-2{
+    width:34px;
+    height: 79px;
+    float: left;
+    margin-left: 350px;
+    color: #06309e;
+}
+.it1-3{
+    width: 34px;
+    height: 79px;
+    float: left;
+    margin-left: 70px;
+    color: #a4a5a7;
+}
+.it1-4{
+    width: 34px;
+    height: 79px;
+    float: left;
+    margin-left: 70px;
+    color: #a4a5a7;
+}
+.it1-5{
+    width: 34px;
+    height: 79px;
+    float: left;
+    margin-left: 70px;
+    color: #a4a5a7;
+}
+.it1-6{
+    width: 50px;
+    height: 79px;
+    float: right;
+    font-size: 8px;
+    color: #a4a5a7;
+}
+.it2{
+    width: 1200px;
+    height:393px ;
+    margin: 0 auto;
+}
+.it2-1{
+    width: 227px;
+    height:393px ;
+    float: left;
+}
+.it2-1 img{
+    width: 100%;
+    height:100%;
+}
+.it2-2{
+    width: 956px;
+    height:393px ;
+    float: left;
+}
+.it2-2-1{
+    width: 956px;
+    height:80px ;
+}
+.it2-2-1 img{
+    width: 100%;
+    height:100%;
+}
+.it2-2-2{
+    width: 956px;
+    height:270px ;
+    margin-top: 43px;
+}
+.it2-2-2-1{
+    width: 227px;
+    height:270px ;
+    float: left;
+}
+.it2-2-2-1 img{
+    width: 100%;
+    height:100%;
+}
+.it2-2-2-2{
+    width: 227px;
+    height:270px ;
+    float: left;
+    margin-left: 16px;
+}
+.it2-2-2-2 img{
+    width: 100%;
+    height:100%;
+}
+.it2-2-2-3{
+    width: 227px;
+    height:270px ;
+    float: left;
+    margin-left: 16px;
+}
+.it2-2-2-3 img{
+    width: 100%;
+    height:100%;
+}
+.it2-2-2-4{
+    width: 227px;
+    height:270px ;
+    float: left;
+    margin-left: 16px;
+}
+.it2-2-2-4 img{
+    width: 100%;
+    height:100%;
+}
+/* 数据分析师 */
+.data1{
+    width: 1200px;
+    height: 79px;
+    margin: 0 auto;
+    background: #f4f5f9;
+    line-height: 79px;
+}
+.data1-1{
+    width: 85px;
+    height: 79px;
+    float: left;
+}
+.data1-2{
+    width:34px;
+    height: 79px;
+    float: left;
+    margin-left: 350px;
+    color: #06309e;
+}
+.data1-3{
+    width: 34px;
+    height: 79px;
+    float: left;
+    margin-left: 68px;
+    color: #a4a5a7;
+}
+.data1-4{
+    width: 34px;
+    height: 79px;
+    float: left;
+    margin-left: 68px;
+    color: #a4a5a7;
+}
+.data1-5{
+    width: 34px;
+    height: 79px;
+    float: left;
+    margin-left: 68px;
+    color: #a4a5a7;
+}
+.data1-6{
+    width: 50px;
+    height: 79px;
+    float: right;
+    font-size: 8px;
+    color: #a4a5a7;
+    
+}
+.data2{
+    width: 1200px;
+    height:393px ;
+    margin: 0 auto;
+}
+.data2-1{
+    width: 227px;
+    height:393px ;
+    float: left;
+}
+.data2-1 img{
+    width: 100%;
+    height:100%;
+}
+.data2-2{
+    width: 956px;
+    height:393px ;
+    float: left;
+}
+.data2-2-1{
+    width: 956px;
+    height:80px ;
+}
+.data2-2-1 img{
+    width: 100%;
+    height:100%;
+}
+.data2-2-2{
+    width: 956px;
+    height:270px ;
+    margin-top: 43px;
+}
+.data2-2-2-1{
+    width: 227px;
+    height:270px ;
+    float: left;
+}
+.data2-2-2-1 img{
+    width: 100%;
+    height:100%;
+}
+.data2-2-2-2{
+    width: 227px;
+    height:270px ;
+    float: left;
+    margin-left: 16px;
+}
+.data2-2-2-2 img{
+    width: 100%;
+    height:100%;
+}
+.data2-2-2-3{
+    width: 227px;
+    height:270px ;
+    float: left;
+    margin-left: 16px;
+}
+.data2-2-2-3 img{
+    width: 100%;
+    height:100%;
+}
+.data2-2-2-4{
+    width: 227px;
+    height:270px ;
+    float: left;
+    margin-left: 16px;
+}
+.data2-2-2-4 img{
+    width: 100%;
+    height:100%;
+}
+/* 机器学习工程师 */
+.engineer1{
+    width: 1200px;
+    height: 79px;
+    margin: 0 auto;
+    background: #f4f5f9;
+    line-height: 79px;
+}
+.engineer1-1{
+    width: 142px;
+    height: 79px;
+    float: left;
+}
+.engineer1-2{
+    width:34px;
+    height: 79px;
+    float: left;
+    margin-left: 290px;
+    color: #06309e;
+}
+.engineer1-3{
+    width: 34px;
+    height: 79px;
+    float: left;
+    margin-left: 68px;
+    color: #a4a5a7;
+}
+.engineer1-4{
+    width: 34px;
+    height: 79px;
+    float: left;
+    margin-left: 68px;
+    color: #a4a5a7;
+}
+.engineer1-5{
+    width: 34px;
+    height: 79px;
+    float: left;
+    margin-left: 68px;
+    color: #a4a5a7;
+}
+.engineer1-6{
+    width: 50px;
+    height: 79px;
+    float: right;
+    font-size: 8px;
+    color: #a4a5a7;
+}
+.engineer2{
+    width: 1200px;
+    height:270px ;
+    margin: 0 auto;
+}
+.engineer2-1 {
+    width: 227px;
+    height:270px ;
+    float: left;
+}
+.engineer2-1 img{
+    width: 100%;
+    height: 100%;
+}
+.engineer2-2 {
+    width: 227px;
+    height:270px ;
+    float: left;
+    margin-left: 10px;
+}
+.engineer2-2 img{
+    width: 100%;
+    height: 100%;
+}
+.engineer2-3 {
+    width: 227px;
+    height:270px ;
+    float: left;
+    margin-left: 10px;
+}
+.engineer2-3 img{
+    width: 100%;
+    height: 100%;
+}
+.engineer2-4 {
+    width: 227px;
+    height:270px ;
+    float: left;
+    margin-left: 10px;
+}
+.engineer2-4 img{
+    width: 100%;
+    height: 100%;
+}
+.engineer2-5 {
+    width: 227px;
+    height:270px ;
+    float: left;
+    margin-left: 10px;
+}
+.engineer2-5 img{
+    width: 100%;
+    height: 100%;
+}
+/* 底部 */
+.bottom{
+    width: 1200px;
+    height: 302px;
+    margin: 0 auto;
+}
+.bottom1{
+    width: 450px;
+    height: 302px;
+    float: left;
+}
+.bottom1 img{
+    width:240px ;
+    height:60px;
+}
+.bottom1 span{
+    font-size: 12px;
+}
+.bottom1-1 img{
+    width:102px ;
+    height: 33px;
+}
+.bottom2{
+    width: 120px;
+    height: 302px;
+    float: left;
+    margin-left:180px;
+    font-size: 12px;
+}
+.bottom3{
+    width: 140px;
+    height: 302px;
+    float: left;
+    margin-left:110px;
+    font-size: 12px;
+}
+.bottom4{
+    width: 120px;
+    height: 302px;
+    float:right;
+    
+    font-size: 12px;
+}

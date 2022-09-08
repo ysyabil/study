@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      div {
+        margin: 200px auto;
+        width: 400px;
+        height: 300px;
+        background: rgba(0, 0, 0, 0.3);
+        transform: rotateX(15deg) rotateY(15deg);
+        transform-style: preserve-3d;
+        /* 创建3d空间 */
+      }
+      p {
+        width: 150px;
+        height: 100px;
+        background: orange;
+        transition: 1s;
+      }
+      div:hover p {
+        /* transform: rotateZ(-90deg); */
+        /* transform: rotateY(45deg); */
+        /* transform: rotateY(-45deg); */
+        /* transform: rotateX(30deg); */
+        transform: rotateX(-30deg);
+
+        transform: rotate3d(-1, 2, 1, 30deg);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        1、设置3d属性：父元素需要创建3d空间
+          transform-style:preserve-3d
+          
+        3d的旋转
+            transform:
+                        rotateZ(顺时针逆时针)
+                        rotateX(上下)
+                             正：往后躺
+                             负：往前趴
+                        rotateY(左右)
+                            正： 从左往右
+                            负： 从右往左
+                        rotate3d(x,y,z,a角度值)
+              
+     -->
+    <div>
+      <p>abc</p>
+    </div>
+  </body>
+</html>
